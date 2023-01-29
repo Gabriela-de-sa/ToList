@@ -1,5 +1,4 @@
-"""
-"""
+"""Task Table"""
 
 # pylint: disable=too-few-public-methods
 import enum
@@ -26,7 +25,7 @@ class PriorityType(enum.Enum):
 class Task(Base):
     """Task Entity"""
 
-    __tablename__ = 'task'
+    __tablename__ = "task"
 
     id_task = Column(Integer, autoincrement=True, primary_key=True)
     task = Column(String(100), nullable=False)
@@ -36,4 +35,4 @@ class Task(Base):
     end_date = Column(String(15), nullable=True)
 
     def __repr__(self):
-        return f'task {self.task}, status {self.status}, {self.priority}'
+        return f"task {self.task}, status {self.status}, {self.priority}"

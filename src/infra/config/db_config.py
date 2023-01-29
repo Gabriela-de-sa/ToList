@@ -1,5 +1,4 @@
-""" oi
-"""
+"""DBConnectHandler class with connection string method"""
 
 import os
 from dotenv import load_dotenv
@@ -14,7 +13,7 @@ class DBConnectHandler:
     """SQLAlchemy database connection"""
 
     def __init__(self):
-        self.connection_string = os.environ['connection_string']
+        self.connection_string = os.environ["connection_string"]
         self.session = None
 
     def get_engine(self):

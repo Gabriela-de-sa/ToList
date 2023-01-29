@@ -10,11 +10,3 @@ repos:
     hooks:
     - id: flake8
       stages: [commit]
-- repo: local
-  hooks:
-    - id: pylint
-      name: pylint
-      entry: pylint
-      language: system
-      types: [python]
-      stages: [commit]
