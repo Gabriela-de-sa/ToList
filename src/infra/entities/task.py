@@ -1,6 +1,5 @@
 """Task Table"""
 
-# pylint: disable=too-few-public-methods
 import enum
 from sqlalchemy import Column, String, Integer, Enum
 from src.infra.config import Base

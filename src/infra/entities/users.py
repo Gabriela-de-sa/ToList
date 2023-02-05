@@ -1,6 +1,5 @@
 """User table"""
 
-# pylint: disable=too-few-public-methods
 from sqlalchemy import String, Column, Integer
 from src.infra.config import Base
 
